@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Valentine 🌹</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Parisienne&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Fireworks -->
+<canvas id="fireworks"></canvas>
+
+<!-- Falling petals -->
+<div class="petals"></div>
+
+<!-- Letter animation -->
+<div class="letter" id="letter">
+    <div class="letter-content" id="letterContent">
+        <h2>My Dearest Love 💖</h2>
+        <p>
+            I’ve been waiting for this moment…<br>
+            Will you be my Valentine? 
+            Pandhiiiiiii🌹
+        </p>
+        <button class="close-letter" onclick="closeLetter()">Close 💌</button>
+    </div>
+</div>
+
+<!-- Surprise bouquet -->
+<div class="surprise" id="surprise">
+    <img src="flower.jpeg" alt="Flower Bouquet">
+    <div class="surprise-letter">
+        <h2>Just for You 💖</h2>
+        <p>“Every love story is beautiful, but ours is my favorite.”</p>
+        <button class="close-letter" onclick="closeSurprise()">Close 💌</button>
+    </div>
+</div>
+
+<!-- Main hero -->
+<div class="hero">
+    <h1>Happy Valentine’s Day</h1>
+
+    <h2>
+        <span id="boyName">Asrithaaaa</span>  
+        <span class="heart">♥</span>  
+        <span id="girlName"></span>
+    </h2>
+
+    <p class="love-text">
+        With flowers in my hands<br>
+        and forever in my heart,<br>
+        I choose you… always.
+    </p>
+
+    <button class="open-btn" onclick="openLetter()">Open My Heart 💌</button>
+    <button class="surprise-btn" onclick="openSurprise()">Surprise for You 🌹</button>
+</div>
+
+<!-- Question -->
+<div class="question" id="questionBox">
+    <h3 id="questionText">Will you be my Valentine? 🌹</h3>
+
+    <div class="btns">
+        <button class="yes" id="yesBtn" onclick="sayYes()">YES 💍</button>
+        <button class="no" id="noBtn">NO 🙃</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
